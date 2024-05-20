@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"goprojects/pkg/uuidUtil"
+	"go-tools/pkg/uuidUtil"
 )
 
 func Setup() gin.HandlerFunc {

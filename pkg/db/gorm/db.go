@@ -126,7 +126,7 @@ func InsertData(data []map[string]interface{},destDbName string,destTableName st
 		allValues[index] = values
 	}
 	columnStr := strings.Join(columns,",")
-	t := template.Must(template.New("values").Funcs(template.FuncMap{"lastRow":DealLastRow}).
+	t := template.Must(template.New("values").Funcs(template.FuncMap{"lastRow": DealLastRow}).
 		Funcs(template.FuncMap{"lastCol": DealLastData}).Funcs(template.FuncMap{
 			"dealData": DealData,
 	}).Parse(valueSql))

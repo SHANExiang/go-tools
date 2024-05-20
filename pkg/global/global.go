@@ -2,8 +2,8 @@ package global
 
 import (
 	"github.com/jinzhu/gorm"
+	"go-tools/pkg/zap/config"
 	"go.uber.org/zap"
-	"goprojects/pkg/zap/config"
 )
 
 var (

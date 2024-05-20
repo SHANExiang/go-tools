@@ -17,8 +17,8 @@ func Setup() error {
 	IdleTimeout：在给定时间内将会保持空闲状态，若到达时间限制则关闭连接（当为零时，没有限制）
 	*/
 	RedisConn = &redis.Pool{
-		MaxIdle: CONF.Redis.MaxIdle,
-		MaxActive: CONF.Redis.MaxActive,
+		MaxIdle:     CONF.Redis.MaxIdle,
+		MaxActive:   CONF.Redis.MaxActive,
 		IdleTimeout: CONF.Redis.IdleTimeout,
 		Dial: func() (redis.Conn, error) {
 			c, err := redis.Dial("tcp", CONF.Redis.Host)

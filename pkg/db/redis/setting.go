@@ -17,7 +17,7 @@ type Redis struct {
 }
 
 type Server struct {
-	Redis    Redis
+	Redis Redis
 }
 
 var CONF Server

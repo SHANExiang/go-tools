@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"goprojects/pkg/file"
-	"goprojects/pkg/global"
-	"goprojects/pkg/zap/internal"
+	"go-tools/pkg/file"
+	"go-tools/pkg/global"
+	"go-tools/pkg/zap/internal"
 	"os"
 )
 

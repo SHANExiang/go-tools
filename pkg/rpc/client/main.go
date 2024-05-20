@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"
-    rpc3 "goprojects/pkg/rpc"
+    rpc3 "go-tools/pkg/rpc"
     "log"
     "net/rpc"
 )

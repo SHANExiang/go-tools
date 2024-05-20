@@ -1,6 +1,6 @@
 package jwt
 
-import "goprojects/pkg/global"
+import "go-tools/pkg/global"
 
 type Auth struct {
 	ID int `gorm:"primary_key" json:"id"`

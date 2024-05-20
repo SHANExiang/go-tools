@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"goprojects/pkg/global"
+	"go-tools/pkg/global"
 	"time"
 )
 

@@ -2,7 +2,7 @@ package jwt
 
 import (
 	"github.com/dgrijalva/jwt-go"
-	"goprojects/pkg/global"
+	"go-tools/pkg/global"
 	"time"
 )
 

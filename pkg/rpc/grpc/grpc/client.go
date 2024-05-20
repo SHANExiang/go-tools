@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"flag"
+	protoes "go-tools/pkg/rpc/grpc/myptoto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	protoes "goprojects/pkg/rpc/grpc/myptoto"
 	"log"
 	"time"
 )
