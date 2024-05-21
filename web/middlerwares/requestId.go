@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"go-tools/pkg/uuidUtil"
+	uuidUtil2 "go-tools/utils/uuidUtil"
 )
 
 func Setup() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		requestId := context.Request.Header.Get("X-Request-Id")
 		if requestId == "" {
-			requestId = uuidUtil.GenerateSnowflake()
+			requestId = uuidUtil2.GenerateSnowflake()
 		}
 		context.Set("X-Request-Id", requestId)
 		context.Writer.Header().Set("X-Request-Id", requestId)
@@ -19,5 +19,5 @@ func Setup() gin.HandlerFunc {
 }
 
 func main() {
-	fmt.Println(uuidUtil.GenerateSnowflake())
+	fmt.Println(uuidUtil2.GenerateSnowflake())
 }
