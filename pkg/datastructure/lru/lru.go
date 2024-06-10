@@ -1,4 +1,4 @@
-package datastructure
+package lru
 
 import "container/list"
 

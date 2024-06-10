@@ -3,7 +3,6 @@ package main
 import (
 	"errors"
 	"fmt"
-	"log"
 )
 
 func Wrap(err *error, f string, v ...interface{}) {
@@ -19,6 +18,22 @@ func testWrap() (err error) {
 	return fmt.Errorf("failed err: %w", err)
 }
 
-func main() {
-    log.Println(testWrap())
+func testPanic() {
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Println("panic ", err)
+		}
+	}()
+
+	//i := 10
+	//j := i / 0
+
+	i := []int{1, 2, 3}
+	fmt.Println("j", i[4])
 }
+
+func main() {
+	testPanic()
+    //log.Println(testWrap())
+}
+
